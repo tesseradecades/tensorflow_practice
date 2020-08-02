@@ -1,6 +1,6 @@
 # tensorflow_practice
 
-**Setup**
+## Setup
 
 1.  Using [Python 3.8.5](https://www.python.org/downloads/release/python-385/)
 
