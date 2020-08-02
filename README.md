@@ -1,8 +1,18 @@
 # tensorflow_practice
 
-Using [Python 3.8.5](https://www.python.org/downloads/release/python-385/)
+**Setup**
 
-`pip install -r requirements.txt`
+1.  Using [Python 3.8.5](https://www.python.org/downloads/release/python-385/)
+
+2.  `python -m venv --system-site-packages .\venv`
+
+3.  `source .venv/Scripts/activate
+
+4.  `pip install -r requirements.txt`
+
+5. `python <exercise file name>`
+
+6. `deactivate`
 
 You will often see the following
 ```
