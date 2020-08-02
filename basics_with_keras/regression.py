@@ -157,9 +157,17 @@ def main():
     print(dataset.isna().sum())
     dataset = dataset.dropna()
 
+    """
+    this line cannot be performed in a separate method or else it will attempt 
+    to map onto a copy of a splice of the dataset. Keras uses certain 
+    underlying logic that's not reliable in copying values in that manner, 
+    leading to the presence of NaN values in the dataset. To prevent this, this
+    .map call is kept in the same scope as the dataset
+    """
     dataset['Origin'] = dataset['Origin'].map({1: 'USA', 2: 'Europe', 3: 'Japan'})
     dataset = pd.get_dummies(dataset, prefix='', prefix_sep='')
     print(dataset.tail())
+    """END CLEAN THE DATA"""
 
     train_dataset,test_dataset=split_the_data(dataset)
 
