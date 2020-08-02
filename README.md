@@ -6,7 +6,7 @@
 
 2.  `python -m venv --system-site-packages .\venv`
 
-3.  `source .venv/Scripts/activate
+3.  `source .venv/Scripts/activate`
 
 4.  `pip install -r requirements.txt`
 
